@@ -8,6 +8,7 @@ import { SecoundComponent } from './secound/secound.component';
 // import { InlinepComponent } from './inlinep/inlinep.component';
 import { UserlistComponent } from './userlist/userlist.component';
 import { TemstyleComponent } from './temstyle/temstyle.component';
+import { EventsComponent } from './events/events.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TemstyleComponent } from './temstyle/temstyle.component';
     SecoundComponent,
     // InlinepComponent,
     UserlistComponent,
-    TemstyleComponent
+    TemstyleComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,

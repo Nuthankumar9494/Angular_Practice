@@ -11,4 +11,10 @@ export class AppComponent {
   getValue(){
     return "If you want to stay in my word you need to be Enroll first"
   }
+  getName(){
+    alert(name);
+  }
+  getvalue(){
+    console.warn("function")
+  }
 }
