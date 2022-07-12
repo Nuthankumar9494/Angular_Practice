@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Hello-world';
+  data="Heloo welcome to my world";
+  getValue(){
+    return "If you want to stay in my word you need to be Enroll first"
+  }
 }
