@@ -24,5 +24,16 @@
     <h1 *ngSwitchCase="'red'" style="color: red;">Im a second case</h1>
     <h1 *ngSwitchCase="'silver'" style="color: silver;"> Im third switch case</h1>
 </div>
+<!-- LoopS  in Angular  -->
+<h1 *ngFor="let item of employee">Name of employee:{{item}}</h1>
+<h2 *ngFor="let item of students">Name of:{{item}}</h2> 
+<!-- Displaying data of objects in array using ngFor  -->
+<h1 *ngFor="let data of Employeesheet">{{data.Name}}--{{data.emaiid}}--{{data.PhoneNo}}</h1>
+<!-- Nested loops -->
+<ul *ngFor="let data of Employeedata">
+    <li>{{data.Name}}</li>
+    <li>{{data.emaiid}}</li>
+</ul>
+
 
 
