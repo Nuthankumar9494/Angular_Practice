@@ -5,3 +5,12 @@
 <input type="text" value={{name}} disabled={{disable}}>
 <!-- changing attribute name using property binding -->
 <input type="text" [value]="name" [disabled]="disable">
+<!-- ngIf and ng-template(else) -->
+<p *ngIf="show=='yes'; else elseBlock" >Hello im ngIf</p>
+<ng-template #elseBlock><p>Hello im else</p></ng-template>
+<p *ngIf="marks=='101'; else elseBlock" >Hello im ngIf</p>
+<ng-template #elseBlock><p>Hello im else</p></ng-template>
+<p *ngIf="percentage>55; else elseBlock" >Hello im ngIf</p>
+<ng-template #elseBlock><p>Hello im else</p></ng-template>
+
+

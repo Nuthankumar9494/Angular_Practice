@@ -13,5 +13,7 @@ export class PropertybindComponent implements OnInit {
   }
   name="Nuthan";
   disable=true;
-
+  show="yes";
+  marks='100';
+  percentage=50;
 }
