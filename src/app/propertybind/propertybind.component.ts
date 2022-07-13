@@ -16,4 +16,5 @@ export class PropertybindComponent implements OnInit {
   show="yes";
   marks='100';
   percentage=50;
+  color='silver';
 }

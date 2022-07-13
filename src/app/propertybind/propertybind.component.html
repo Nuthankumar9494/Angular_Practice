@@ -12,5 +12,17 @@
 <ng-template #elseBlock><p>Hello im else</p></ng-template>
 <p *ngIf="percentage>55; else elseBlock" >Hello im ngIf</p>
 <ng-template #elseBlock><p>Hello im else</p></ng-template>
+<p *ngIf="show=='yes'; else elseBlock" >Hello im ngIf</p>
+<ng-template #elseBlock><p>Hello im else</p></ng-template>
+<!-- multiple condition and else if -->
+<ng-template [ngIf]="color=='blue'"> <h1 style="color:rgb(0, 21, 255)">hello im red</h1></ng-template>
+<ng-template [ngIf]="color=='red'"> <h1 style="color:red">hello im red</h1></ng-template>
+<ng-template [ngIf]="color=='gold'"> <h1 style="color:gold">hello im red</h1></ng-template>
+<!-- switch case -->
+<div [ngSwitch]="color">
+    <h1 *ngSwitchCase="'gold'" style="color: gold;">Im a switch case</h1>
+    <h1 *ngSwitchCase="'red'" style="color: red;">Im a second case</h1>
+    <h1 *ngSwitchCase="'silver'" style="color: silver;"> Im third switch case</h1>
+</div>
 
 
