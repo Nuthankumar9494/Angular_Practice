@@ -10,3 +10,5 @@
 <br>
 <button (click)="counter()">--</button>
 <p>count :{{count}}</p>
+<h1>Input event</h1>
+<input type="text" #box (keyup)="getname(box.value)">

@@ -20,5 +20,8 @@ export class EventsComponent implements OnInit {
   counter(){
     this.count++;
   }
+  getname(name:string){
+console.log(name);
+  }
 
 }

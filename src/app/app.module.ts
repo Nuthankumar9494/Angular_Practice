@@ -10,6 +10,7 @@ import { UserlistComponent } from './userlist/userlist.component';
 import { TemstyleComponent } from './temstyle/temstyle.component';
 import { EventsComponent } from './events/events.component';
 import { PropertybindComponent } from './propertybind/propertybind.component';
+import { HeadComponent } from './head/head.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PropertybindComponent } from './propertybind/propertybind.component';
     UserlistComponent,
     TemstyleComponent,
     EventsComponent,
-    PropertybindComponent
+    PropertybindComponent,
+    HeadComponent
   ],
   imports: [
     BrowserModule,

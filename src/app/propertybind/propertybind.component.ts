@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./propertybind.component.css']
 })
 export class PropertybindComponent implements OnInit {
-
+  // public color='red';
   constructor() { }
 
   ngOnInit(): void {
@@ -29,5 +29,10 @@ export class PropertybindComponent implements OnInit {
     {Name:'bhasker',emaiid:'gatadi.xyz@.com',PhoneNo:89478924,Procjects:['Tea world','Yoga registration']},
     {Name:'babu',emaiid:'gatadi.xyz@.com',PhoneNo:89478924,Procjects:['Tea must','employe registration']}
   ]
-
+  bgcolor='blue';
+  color1='red';
+  change(){
+    this.bgcolor='red';
+    this.color1='gold';
+  }
 }
