@@ -1,1 +1,9 @@
 <p>head works!</p>
+<form #basicform="ngForm" (submit)="getData(basicform.value)">
+    <input type="text" ngModel name="username">
+    <br>
+    <input type="email" ngModel name="useremai">
+    <br>
+    <input type="tel" ngModel name="usernumber">
+    <button>submit</button>
+</form> 
