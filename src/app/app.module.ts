@@ -9,6 +9,7 @@ import { SecoundComponent } from './secound/secound.component';
 import { UserlistComponent } from './userlist/userlist.component';
 import { TemstyleComponent } from './temstyle/temstyle.component';
 import { EventsComponent } from './events/events.component';
+import { PropertybindComponent } from './propertybind/propertybind.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EventsComponent } from './events/events.component';
     // InlinepComponent,
     UserlistComponent,
     TemstyleComponent,
-    EventsComponent
+    EventsComponent,
+    PropertybindComponent
   ],
   imports: [
     BrowserModule,
