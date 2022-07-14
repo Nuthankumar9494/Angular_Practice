@@ -1,4 +1,5 @@
-<app-view></app-view>
+<app-view [item]="value"></app-view>
+<app-view [item]="value"></app-view>
 <!-- Interpolation displayimng dynamic data in app.html,from app.components.ts -->
 <!-- The things we cant do in interpolation Increment,Decrement,typeoof,we cant change any tile,without any {{}} interpolation we cant add -->
 <h1>{{data}}</h1>
@@ -12,7 +13,7 @@
 <!-- <h1>{{typeof title}}</h1> -->
  
 <!-- Displaying created component htnl in main app.component.html -->
-<app-secound>Hello Hello-world</app-secound>
+<app-secound [time]="date">Hello Hello-world</app-secound>
 <!-- Explanation of inline style and inline template -->
 <app-userlist>Hello</app-userlist>
 <app-temstyle></app-temstyle> 
@@ -23,3 +24,6 @@
  <!--Property binding  -->
  <app-propertybind></app-propertybind>
  <app-head></app-head>
+ <app-passdata (datapasschild)="pass($event)"></app-passdata>
+ <app-button   (tapbutton)="button($event)"></app-button>
+ 

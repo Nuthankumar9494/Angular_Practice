@@ -16,5 +16,10 @@ export class HeadComponent implements OnInit {
   getData(data:NgForm){
     console.warn(data)
   }
+  display=true;
+  toggle(){
+    this.display=!this.display;
+  }
+  
 
 }

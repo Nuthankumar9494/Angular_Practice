@@ -12,6 +12,8 @@ import { TemstyleComponent } from './temstyle/temstyle.component';
 import { EventsComponent } from './events/events.component';
 import { PropertybindComponent } from './propertybind/propertybind.component';
 import { HeadComponent } from './head/head.component';
+import { PassdataComponent } from './passdata/passdata.component';
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { HeadComponent } from './head/head.component';
     TemstyleComponent,
     EventsComponent,
     PropertybindComponent,
-    HeadComponent
+    HeadComponent,
+    PassdataComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

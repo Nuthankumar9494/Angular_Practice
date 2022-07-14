@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -17,4 +17,16 @@ export class AppComponent {
   getvalue(){
     console.warn("function")
   }
+  value=15;
+  date=18;
+  pass(data:string){
+       console.warn(data);
+  }
+ 
+  public message :any;
+  button(data:string){
+    console.log(data)
+    this.message=data;
+  }
+
 }
