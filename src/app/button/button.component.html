@@ -1,4 +1,12 @@
 <p>button works!</p>
-<button class="btn-primary"  (click)="fireEvent()">submit</button>
-<br><br>
-<button class="btn-primary" (click)="fireEvent2()">submit</button>
+<button *ngIf="show " class="{{button.btn2}}" (click)="fireEvent()">submit1</button>
+
+<button *ngIf="hide" (click)="fireEvent2()">submit2</button>
+<br> 
+<!-- Ng model two way binding -->
+<p>Two-waay binding ngModel: <input type="text" [(ngModel)]="name"></p>
+<br>
+{{name}} 
+<input  type="text" #input placeholder="enter name">
+<button (click)="getInputValue(input.placeholder)">Submit</button>
+{{display}}

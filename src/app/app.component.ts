@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { PRIMARY_OUTLET } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -22,11 +23,16 @@ export class AppComponent {
   pass(data:string){
        console.warn(data);
   }
- 
+  
   public message :any;
   button(data:string){
     console.log(data)
     this.message=data;
-  }
 
+  }
+  public color={
+  btn1:"bg-primary",
+  btn2:"bg-secondary"
+  }
+  
 }
